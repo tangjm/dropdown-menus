@@ -1,0 +1,61 @@
+h1 { 
+  margin: 20px 20px;
+}
+
+.grid-container {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px; 
+  margin: 10px;
+  padding: 10px;
+}
+
+div.heading {
+  padding: 10px 0px;
+}
+
+div.drop-down-menu, div.drop-down-menu-group {
+  border: 1px solid violet;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 25px 1fr;
+  width: 150px;
+  margin: 0px; 
+  padding: 0px;
+}
+
+.menu {
+  grid-row-start: 1;
+  border: 1px solid black;
+  text-align: center;
+  background: #ffffff;
+  margin: 0px;
+  padding: 1px;
+}
+.menu-active {
+  background: #00ff00;
+}
+.menu:hover {
+  background: #ffff00;
+  cursor: pointer;
+}
+.items {
+  grid-row-start: 2;
+  border: 1px solid black;
+  display: none;
+  margin: 0px; 
+  padding: 0px;
+}
+.items-visible {
+  display: block;
+}
+
+.items > .item {
+  border: 1px solid black;
+  background: #ff0000;
+  margin: 0px;
+  padding: 1px;
+}
