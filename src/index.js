@@ -1,4 +1,4 @@
-import styles from "./index.css"
+import "./index.css"
 
 const dropDownMenuClick = document.querySelector(".drop-down-menu.menu-click");
 const dropDownMenuHover = document.querySelector(".drop-down-menu.menu-hover");
